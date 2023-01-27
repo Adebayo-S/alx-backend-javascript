@@ -2,7 +2,8 @@ export default class HolbertonCourse {
   constructor(name, length, students) {
     if (typeof name !== 'string') throw TypeError('name must be a String')
     if (typeof length !== 'number') throw TypeError('length must be a Number')
-    if (!(students instanceof Array)) throw TypeError('students must be an Array')
+    if (!(students instanceof Array))
+      throw TypeError('students must be an Array')
     for (const student of students) {
       if (typeof student !== 'string') {
         throw TypeError('students must contain strings')
@@ -32,7 +33,8 @@ export default class HolbertonCourse {
   }
 
   set students(students) {
-    if (!(students instanceof Array)) throw TypeError('students must be an Array')
+    if (!(students instanceof Array))
+      throw TypeError('students must be an Array')
     for (const student of students) {
       if (typeof student !== 'string') {
         throw TypeError('students must contain strings')
