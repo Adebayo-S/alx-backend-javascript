@@ -296,6 +296,7 @@ in your project directory:
   &NewLine;
   For each entry of the map where the quantity is 1, update the quantity to 100. If updating the quantity is not possible (argument is not a map) the error `Cannot process` should be thrown.
   &NewLine;
+  &NewLine;
 
   ```bash
   bob@dylan:~$ cat 10-main.js
@@ -342,8 +343,9 @@ in your project directory:
 
   &NewLine;
   Track within the `weakMap` the number of times `queryAPI` is called for each endpoint.
-  &NewLine;
+&NewLine;
   When the number of queries is >= 5 throw an error with the message `Endpoint load is high.`
+  &NewLine;
 
   ```bash
   bob@dylan:~$ cat 100-main.js
