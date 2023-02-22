@@ -1,3 +1,5 @@
-export default function displayMessage(toPrint) {
-  console.log(toPrint);
+function displayMessage(string) {
+  console.log(string);
 }
+
+module.exports = displayMessage;
